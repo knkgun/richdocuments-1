@@ -73,8 +73,4 @@ class CollaboraTemplateProvider implements ICustomTemplateProvider {
 	public function getCustomTemplate(string $template): File {
 		return $this->templateManager->get((int)$template);
 	}
-
-	public function createFromTemplate(File $template, File $target): void {
-		// TODO: Implement createFromTemplate() method.
-	}
 }
