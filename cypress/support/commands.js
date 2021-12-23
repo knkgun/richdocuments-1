@@ -37,7 +37,7 @@ Cypress.Commands.overwrite("clearCookies", () => {
 Cypress.Commands.add('login', (route = '/apps/files') => {
 	const randUser = randHash()
 	cy.nextcloudCreateUser(randUser, 'password')
-	cy.loginAsUser(randUser, 'password')
+	cy.loginAsUser(randUser, 'password', route)
 })
 
 Cypress.Commands.add('loginAsUser', (user, password, route = '/apps/files') => {

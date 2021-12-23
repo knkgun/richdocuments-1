@@ -108,3 +108,4 @@ jobs:
           working-directory: 'apps/${{ env.APP_NAME }}'
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          DEBUG: '@cypress/github-action'
