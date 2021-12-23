@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://nextcloud.dev.local/index.php/",
+  "baseUrl": "https://localhost:8081/index.php/",
   "projectId": "fef71b",
   "viewportWidth": 1280,
   "viewportHeight": 720,
