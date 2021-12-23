@@ -89,13 +89,15 @@ jobs:
           php occ app:enable --force richdocuments
           php occ app:list
 
-          php occ config:app:set richdocuments wopi_url --value="http://localhost:9980/"
+          php occ config:app:set richdocuments wopi_url --value="http://localhost:9980"
+          php occ config:app:set richdocuments public_wopi_url --value="http://localhost:9980"
+          php occ config:system:set allow_local_remote_servers --value true --type bool
           php occ richdocuments:activate-config
 
 
           curl -v http://localhost:8081/index.php/login
 
-          curl -v http://localhost:9980/hosting/capabilities
+          curl -v http://localhost:9980/hosting/capabilities --output -
 
           cat data/nextcloud.log
 
