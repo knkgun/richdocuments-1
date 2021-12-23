@@ -22,7 +22,7 @@
 
 describe('Files default view', function() {
 	before(function() {
-		cy.login('admin', 'admin')
+		cy.login()
 	})
 	after(function() {
 		cy.logout()
