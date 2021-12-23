@@ -62,6 +62,12 @@ jobs:
         with:
           path: apps/${{ env.APP_NAME }}
 
+      - name: npm install, build viewer in testing mode
+        working-directory: apps/richdocuments
+        run: |
+          npm ci
+          TESTING=true npm run dev --if-present
+
       - name: Set up php ${{ matrix.php-versions }}
         uses: shivammathur/setup-php@v2
         with:
