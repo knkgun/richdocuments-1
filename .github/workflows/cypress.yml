@@ -95,7 +95,7 @@ jobs:
           php occ richdocuments:activate-config
 
 
-          curl -v http://localhost:8081/index.php/login
+          curl http://admin:admin@localhost:8081/ocs/v1.php/cloud/capabilities\?format\=json -H 'OCS-APIRequest: true'
 
           curl -v http://localhost:9980/ --output -
           curl -v http://localhost:9980/hosting/discovery --output -
