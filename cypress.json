@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://nextcloud.dev.local/index.php/",
+  "projectId": "hx9gqy",
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "chromeWebSecurity": false,
+  "modifyObstructiveCode": false
+}
