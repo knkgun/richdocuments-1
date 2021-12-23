@@ -3,7 +3,7 @@ name: Cypress
 on: [push]
 
 env:
-  APP_NAME: text
+  APP_NAME: richdocuments
   CYPRESS_baseUrl: http://localhost:8081/index.php
 
 jobs:
