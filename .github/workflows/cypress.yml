@@ -91,8 +91,8 @@ jobs:
           php occ user:add --password-from-env user1
           php occ user:add --password-from-env user2
           php occ config:system:set force_language --value en
-          php occ app:enable viewer
-          php occ app:enable richdocuments
+          php occ app:enable --force viewer
+          php occ app:enable --force richdocuments
           php occ app:list
 
           php occ config:app:set richdocuments wopi_url --value="http://localhost:8081/"
