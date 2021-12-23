@@ -97,6 +97,8 @@ jobs:
 
           curl -v http://localhost:8081/index.php/login
 
+          curl -v http://localhost:9980/ --output -
+          curl -v http://localhost:9980/hosting/discovery --output -
           curl -v http://localhost:9980/hosting/capabilities --output -
 
           cat data/nextcloud.log
